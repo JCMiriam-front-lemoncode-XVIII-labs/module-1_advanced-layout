@@ -4,25 +4,17 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "format": "prettier --write \"src/**/*.{js,scss,html,json}\" \"scripts/*.mjs\" vite.config.js package.json .prettierrc.json",
-    "format:check": "prettier --check \"src/**/*.{js,scss,html,json}\" \"scripts/*.mjs\" vite.config.js package.json .prettierrc.json",
-    "catalog:sync": "node scripts/sync-tmdb.mjs",
+    "format": "prettier --write \"src/**/*.{js,scss,html,json}\" vite.config.js package.json .prettierrc.json",
+    "format:check": "prettier --check \"src/**/*.{js,scss,html,json}\" vite.config.js package.json .prettierrc.json",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "devDependencies": {
-    "@vitejs/plugin-react": "^4.4.1",
     "nunjucks": "^3.2.4",
     "prettier": "^3.9.9",
     "sass": "^1.77.4",
     "vite": "^4.5.14",
-    "vite-plugin-html": "^3.2.2",
-    "vite-plugin-html-inline": "^0.1.6",
     "vite-plugin-nunjucks": "^0.2.0"
-  },
-  "dependencies": {
-    "react": "^19.1.0",
-    "react-dom": "^19.1.0"
   }
 }
