@@ -1,0 +1,5 @@
+dist
+node_modules
+.env*
+src/public
+src/commons/styles/index.html
