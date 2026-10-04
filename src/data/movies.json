@@ -1,6 +1,4 @@
 {
-  "source": "TMDB",
-  "updatedAt": "2026-10-04T20:38:03.392Z",
   "popular": [
     "interstellar",
     "arrival",
@@ -32,14 +30,11 @@
       "originalTitle": "Interstellar",
       "year": 2014,
       "overview": "Un grupo de exploradores hacen uso de un agujero de gusano recientemente descubierto para superar las limitaciones de los viajes espaciales tripulados y vencer las inmensas distancias que tiene un viaje interestelar.",
-      "tmdbId": 157336,
-      "overviewSource": "TMDB",
       "runtime": 169,
       "genres": ["Aventura", "Drama", "Ciencia ficción"],
       "rating": 8.489,
       "poster": "https://image.tmdb.org/t/p/w500/d1QKiYtceF3GDtxvTFXFAqwwah9.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/8sNiAPPYU14PUepFNeSNGUTiHW.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/157336"
+      "backdrop": "https://image.tmdb.org/t/p/w780/8sNiAPPYU14PUepFNeSNGUTiHW.jpg"
     },
     {
       "slug": "arrival",
@@ -47,14 +42,11 @@
       "originalTitle": "Arrival",
       "year": 2016,
       "overview": "Unas misteriosas naves espaciales aterrizan por todo el mundo. Un equipo, liderado por la lingüista Louise Banks, intenta descifrar el motivo de su visita. A medida que la humanidad se tambalea al borde de la guerra, Louise y su equipo luchan contra el tiempo, llegando a poner en peligro su vida y, muy posiblemente, la del resto de la humanidad.",
-      "tmdbId": 329865,
-      "overviewSource": "TMDB",
       "runtime": 116,
       "genres": ["Drama", "Ciencia ficción", "Misterio"],
       "rating": 7.635,
       "poster": "https://image.tmdb.org/t/p/w500/tbVITeytclB4JKx2LxxasrCCmZx.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/8MUZz7oPXQftFTslZpRP3CVMOoq.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/329865"
+      "backdrop": "https://image.tmdb.org/t/p/w780/8MUZz7oPXQftFTslZpRP3CVMOoq.jpg"
     },
     {
       "slug": "inception",
@@ -62,14 +54,11 @@
       "originalTitle": "Inception",
       "year": 2010,
       "overview": "Dom Cobb es un ladrón hábil, el mejor de todos, especializado en el peligroso arte de extracción: el robo de secretos valiosos desde las profundidades del subconsciente durante el estado de sueño cuando la mente está más vulnerable. Esta habilidad excepcional de Cobb le ha hecho un jugador codiciado en el traicionero nuevo mundo de espionaje corporativo, pero al mismo tiempo, le ha convertido en un fugitivo internacional y ha tenido que sacrificar todo que le importaba. Ahora a Cobb se le ofrece una oportunidad para redimirse. Con un último trabajo podría recuperar su vida anterior, pero solamente si logra lo imposible.",
-      "tmdbId": 27205,
-      "overviewSource": "TMDB",
       "runtime": 148,
       "genres": ["Acción", "Ciencia ficción", "Aventura"],
       "rating": 8.4,
       "poster": "https://image.tmdb.org/t/p/w500/tXQvtRWfkUUnWJAn2tN3jERIUG.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/27205"
+      "backdrop": "https://image.tmdb.org/t/p/w780/8ZTVqvKDQ8emSGUEMjsS4yHAwrp.jpg"
     },
     {
       "slug": "blade-runner-2049",
@@ -77,14 +66,11 @@
       "originalTitle": "Blade Runner 2049",
       "year": 2017,
       "overview": "Han pasado 30 años desde los acontecimientos ocurridos en Blade Runner (1982). El oficial K, un blade runner caza-replicantes del Departamento de Policía de Los Ángeles, descubre un secreto que ha estado enterrado durante mucho tiempo y que tiene el potencial de llevar a la sociedad al caos. Su investigación le conducirá a la búsqueda del legendario Rick Deckard, un antiguo blade runner en paradero desconocido, que lleva desaparecido 30 años.",
-      "tmdbId": 335984,
-      "overviewSource": "TMDB",
       "runtime": 164,
       "genres": ["Ciencia ficción", "Drama"],
       "rating": 7.608,
       "poster": "https://image.tmdb.org/t/p/w500/cOt8SQwrxpoTv9Bc3kyce3etkZX.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/gNdLJU9TxrpGx4dkZidjys3fyy0.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/335984"
+      "backdrop": "https://image.tmdb.org/t/p/w780/gNdLJU9TxrpGx4dkZidjys3fyy0.jpg"
     },
     {
       "slug": "dune-part-two",
@@ -92,14 +78,11 @@
       "originalTitle": "Dune: Part Two",
       "year": 2024,
       "overview": "Sigue el viaje mítico de Paul Atreides mientras se une a Chani y los Fremen en una guerra de venganza contra los conspiradores que destruyeron a su familia. Al enfrentarse a una elección entre el amor de su vida y el destino del universo conocido, Paul se esfuerza por evitar un futuro terrible que solo él puede prever.",
-      "tmdbId": 693134,
-      "overviewSource": "TMDB",
       "runtime": 167,
       "genres": ["Ciencia ficción", "Aventura"],
       "rating": 8.1,
       "poster": "https://image.tmdb.org/t/p/w500/xCHmhHeO7aOCMlzcNukGH6Q7EiD.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/eZ239CUp1d6OryZEBPnO2n87gMG.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/693134"
+      "backdrop": "https://image.tmdb.org/t/p/w780/eZ239CUp1d6OryZEBPnO2n87gMG.jpg"
     },
     {
       "slug": "contact",
@@ -107,14 +90,11 @@
       "originalTitle": "Contact",
       "year": 1997,
       "overview": "Eleanor Arroway perdió la fe en Dios tras la muerte de sus padres en su niñez. Sin embargo, Ellie ha desarrollado una clase distinta de fe en lo desconocido: trabaja con un grupo de científicos escrutando ondas de radio procedentes del espacio exterior en busca de señales de inteligencias extraterrestres. Su trabajo se verá recompensado cuando detecte una señal desconocida que supuestamente porta las instrucciones de fabricación de una máquina para reunirse con los creadores del mensaje.",
-      "tmdbId": 686,
-      "overviewSource": "TMDB",
       "runtime": 150,
       "genres": ["Drama", "Ciencia ficción", "Misterio"],
       "rating": 7.45,
       "poster": "https://image.tmdb.org/t/p/w500/rFcs0iDNWD5mAq9a6YrKn5qdsFa.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/yFkUPqBuUnbhYbQL8VFpTrAT9za.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/686"
+      "backdrop": "https://image.tmdb.org/t/p/w780/yFkUPqBuUnbhYbQL8VFpTrAT9za.jpg"
     },
     {
       "slug": "the-martian",
@@ -122,14 +102,11 @@
       "originalTitle": "The Martian",
       "year": 2015,
       "overview": "Un explorador espacial queda atrapado en Marte, luego de ser abandonado por los miembros de su tripulación, quienes pensaron que había muerto a consecuencia de una tormenta. Casi sin recursos y con solo su ingenio, intentará sobrevivir mientras la NASA, por un lado, y los miembros de su tripulación, por su propia cuenta, intentan rescatarlo.",
-      "tmdbId": 286217,
-      "overviewSource": "TMDB",
       "runtime": 142,
       "genres": ["Ciencia ficción", "Drama", "Aventura"],
       "rating": 7.708,
       "poster": "https://image.tmdb.org/t/p/w500/hBRK1izFxIH3Nh6vax4ssOHSHVd.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/lzMS0CI3FLQYC5EgJoWeIaEt0lm.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/286217"
+      "backdrop": "https://image.tmdb.org/t/p/w780/lzMS0CI3FLQYC5EgJoWeIaEt0lm.jpg"
     },
     {
       "slug": "moon",
@@ -137,14 +114,11 @@
       "originalTitle": "Moon",
       "year": 2009,
       "overview": "La película cuenta la historia de Sam Bell, un astronauta que se encuentra cerca de finalizar su contrato con Lunar, empresa para la que ha trabajado durante tres años viviendo en Selene, una base lunar desde la que ha estado extrayendo gas de la mina Helium 3, a causa de la terrible crisis energética que está pasando la Tierra. Dos semanas antes de su regreso a casa con su mujer y su hija, Sam comienza a tener extrañas visiones y a sentirse extraño, pero no será hasta la llegada de sus sustituto cuando Sam vea sus sospechas en cuanto a los verdaderos propósitos de Lunar hechos realidad, pues algo más que su contrato va a expirar en breve.",
-      "tmdbId": 17431,
-      "overviewSource": "TMDB",
       "runtime": 97,
       "genres": ["Ciencia ficción", "Drama"],
       "rating": 7.563,
       "poster": "https://image.tmdb.org/t/p/w500/nGqJXp5nfLyd12T7YIhcFatOFxz.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/mvUAo9ACgmLpS4Ofc2IwD4n7WCt.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/17431"
+      "backdrop": "https://image.tmdb.org/t/p/w780/mvUAo9ACgmLpS4Ofc2IwD4n7WCt.jpg"
     },
     {
       "slug": "2001",
@@ -152,14 +126,11 @@
       "originalTitle": "2001: A Space Odyssey",
       "year": 1968,
       "overview": "Mientras investigan la aparición de misteriosos monolitos en el universo, dos astronautas luchan contra la inteligencia artificial de su nave.",
-      "tmdbId": 62,
-      "overviewSource": "TMDB",
       "runtime": 149,
       "genres": ["Ciencia ficción", "Misterio", "Aventura"],
       "rating": 8.043,
       "poster": "https://image.tmdb.org/t/p/w500/pGabanxaE2YvN4jhZuSN3oXO0mi.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/w5IDXtifKntw0ajv2co7jFlTQDM.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/62"
+      "backdrop": "https://image.tmdb.org/t/p/w780/w5IDXtifKntw0ajv2co7jFlTQDM.jpg"
     },
     {
       "slug": "sunshine",
@@ -167,14 +138,11 @@
       "originalTitle": "Sunshine",
       "year": 2007,
       "overview": "En el 2057, ante la inminente extinción de la humanidad a causa del envejecimiento del Sol, una nave espacial debe reactivar el astro con un dispositivo nuclear. Pero durante el viaje, la tripulación recibe una señal de socorro de la nave espacial Ícaro I, desaparecida años atrás tras intentar realizar la misma misión.",
-      "tmdbId": 1272,
-      "overviewSource": "TMDB",
       "runtime": 107,
       "genres": ["Ciencia ficción", "Suspense"],
       "rating": 6.974,
       "poster": "https://image.tmdb.org/t/p/w500/mHyxp18J0ARdq41XgWMxLy1TLOn.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/5AIAnucJKZ3sHpm7r1ykFVIoUHK.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/1272"
+      "backdrop": "https://image.tmdb.org/t/p/w780/5AIAnucJKZ3sHpm7r1ykFVIoUHK.jpg"
     },
     {
       "slug": "ex-machina",
@@ -182,14 +150,11 @@
       "originalTitle": "Ex Machina",
       "year": 2015,
       "overview": "Nathan, un programador multimillonario con fama de ermitaño, selecciona a Caleb, un joven empleado de su empresa, para que pase una semana con él en un lugar remoto en las montañas con el objetivo de realizar un test en el que está involucrada su última creación: Ava, un robot-mujer en el que la inteligencia artificial lo es todo.",
-      "tmdbId": 264660,
-      "overviewSource": "TMDB",
       "runtime": 108,
       "genres": ["Drama", "Ciencia ficción"],
       "rating": 7.57,
       "poster": "https://image.tmdb.org/t/p/w500/mQohkAkV1m7yT43UnYkgvmyKUoa.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/uqOuJ50EtTj7kkDIXP8LCg7G45D.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/264660"
+      "backdrop": "https://image.tmdb.org/t/p/w780/uqOuJ50EtTj7kkDIXP8LCg7G45D.jpg"
     },
     {
       "slug": "gattaca",
@@ -197,14 +162,11 @@
       "originalTitle": "Gattaca",
       "year": 1997,
       "overview": "En un futuro cercano, en La Tierra la perfección genética impera. Los seres inferiores, como Vincent Freeman, cuyo ADN es fruto de una relación natural y no de laboratorio, están condenados al fracaso. Pero Vincent quiere triunfar, y conseguirá esconder su verdadera condición para conseguir su objetivo más ansiado: ser piloto espacial.",
-      "tmdbId": 782,
-      "overviewSource": "TMDB",
       "runtime": 106,
       "genres": ["Ciencia ficción", "Drama"],
       "rating": 7.567,
       "poster": "https://image.tmdb.org/t/p/w500/1gXcEISnpV8IXCylhGI4eyBKjM.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/hPsCR1ny6GnctJkWqeJwihTDD7T.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/782"
+      "backdrop": "https://image.tmdb.org/t/p/w780/hPsCR1ny6GnctJkWqeJwihTDD7T.jpg"
     },
     {
       "slug": "coherence",
@@ -212,14 +174,11 @@
       "originalTitle": "Coherence",
       "year": 2014,
       "overview": "Fue en Finlandia, en 1923. El paso de un cometa hizo que los habitantes de un pueblo quedaran completamente desorientados, hasta el punto que una mujer llamó a la policía alertando de que el hombre que estaba en su casa no era su marido. Décadas más tarde, un grupo de amigos recuerda este caso mientras cenan, brindan y se preparan para ver pasar un cometa. ¿Puede acaso repetirse la misma historia?",
-      "tmdbId": 220289,
-      "overviewSource": "TMDB",
       "runtime": 89,
       "genres": ["Suspense", "Ciencia ficción"],
       "rating": 7.209,
       "poster": "https://image.tmdb.org/t/p/w500/yZP8tg2yX0RGqFwknfCYWuy6bpp.jpg",
-      "backdrop": "https://image.tmdb.org/t/p/w780/cvGE73s935bXEAVt2W0zADPPegG.jpg",
-      "tmdbUrl": "https://www.themoviedb.org/movie/220289"
+      "backdrop": "https://image.tmdb.org/t/p/w780/cvGE73s935bXEAVt2W0zADPPegG.jpg"
     }
   ]
 }
