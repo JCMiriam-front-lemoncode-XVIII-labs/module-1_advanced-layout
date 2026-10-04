@@ -28,19 +28,28 @@
       </a>
       <nav aria-label="Navegación principal">
         <a class="nav-link" href="#inicio">Inicio</a>
-        <a class="nav-link" href="#buscar">Buscar</a>
       </nav>
+      <div class="header-search" role="search" aria-label="Buscar en el catálogo">
+        <label class="visually-hidden" for="catalog-search">Buscar películas</label>
+        <svg class="header-search__icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 4 4" />
+        </svg>
+        <input
+          class="header-search__input"
+          id="catalog-search"
+          type="search"
+          placeholder="Buscar películas…"
+          autocomplete="off"
+          aria-controls="catalogo"
+        />
+      </div>
     </header>
     <main class="catalog" id="inicio">
+      <p class="search-status" role="status" aria-live="polite"></p>
       <div id="catalogo" tabindex="-1">
         {% include "./src/components/catalog/catalog.html" %}
       </div>
-      <section class="search-panel" id="buscar" aria-labelledby="search-title">
-        <h2 id="search-title">Buscar en el catálogo</h2>
-        <label for="catalog-search">Título de la película o serie</label>
-        <input id="catalog-search" type="search" placeholder="Escribe un título…" />
-        <p class="search-status" role="status" aria-live="polite"></p>
-      </section>
     </main>
     <script type="module" src="./main.js"></script>
   </body>

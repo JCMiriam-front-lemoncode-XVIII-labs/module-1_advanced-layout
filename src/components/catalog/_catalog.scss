@@ -64,6 +64,51 @@ input {
   nav {
     display: flex;
     gap: 6px;
+    margin-left: auto;
+  }
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+.header-search {
+  position: relative;
+  width: clamp(140px, 24vw, 300px);
+  min-width: 0;
+
+  &__icon {
+    position: absolute;
+    top: 50%;
+    left: 14px;
+    width: 16px;
+    height: 16px;
+    transform: translateY(-50%);
+    fill: none;
+    stroke: var(--muted);
+    stroke-width: 1.8;
+    pointer-events: none;
+  }
+
+  &__input {
+    width: 100%;
+    padding: 10px 14px 10px 40px;
+    border: 1px solid var(--border);
+    border-radius: 24px;
+    background: #ffffff06;
+    font-size: 14px;
+
+    &::placeholder {
+      color: var(--muted);
+    }
+
+    &:focus {
+      border-color: var(--accent);
+    }
   }
 }
 .brand {
@@ -97,8 +142,7 @@ input {
     color: #fff;
   }
 }
-body:not(:has(#buscar:target)) .nav-link[href='#inicio'],
-body:has(#buscar:target) .nav-link[href='#buscar'] {
+.nav-link[href='#inicio'] {
   color: #f2d9ff;
   background: #a23dc021;
 }
@@ -259,33 +303,15 @@ h2 {
     overflow-wrap: anywhere;
   }
 }
-.search-panel {
-  display: none;
-  margin-top: 48px;
-  max-width: 640px;
-  padding: 28px;
-  background: #1c1a20;
-  border: 1px solid var(--border);
-  border-radius: 16px;
-  &:target {
-    display: grid;
-    gap: 16px;
-  }
-  label {
-    color: var(--muted);
-    font-size: 14px;
-  }
-  input {
-    width: 100%;
-    padding: 14px 16px;
-    background: #141414;
-    border: 1px solid #ffffff26;
-    border-radius: 10px;
-  }
-}
+
 .search-status {
   color: var(--accent);
   font-size: 14px;
+  margin-bottom: 20px;
+
+  &:empty {
+    display: none;
+  }
 }
 .movie-dialog {
   width: min(600px, calc(100% - 32px));
@@ -349,6 +375,15 @@ h2 {
   }
   .site-header {
     height: 64px;
+    nav {
+      display: none;
+    }
+  }
+  .header-search {
+    width: min(240px, calc(100% - 50px));
+    &__input {
+      font-size: 16px;
+    }
   }
   .brand {
     &__logo {

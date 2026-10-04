@@ -36,7 +36,7 @@ vite.config.js               # Configuración de Vite y Nunjucks
 
 ### 1️⃣ Cabecera y navegación
 
-Cabecera fija que permanece visible al hacer scroll, con el logo de Lemonspace y los enlaces de inicio y búsqueda.
+Cabecera fija que permanece visible al hacer scroll, con el logo y el enlace de inicio y el buscador integrado.
 
 - Desde **1280 px**, se muestran el logo y el nombre de la plataforma.
 - Por debajo de **1280 px**, se muestra únicamente el logo.
@@ -78,7 +78,7 @@ La distribución se adapta mediante **Flexbox** y **container queries**, con una
 
 ### 4️⃣ Búsqueda y fichas
 
-La búsqueda filtra las películas de las categorías por su título en español u original, sin distinguir mayúsculas ni tildes.
+El buscador de la cabecera filtra las películas de las categorías por su título en español u original, sin distinguir mayúsculas ni tildes.
 
 Al pulsar una carátula se abre una ficha con:
 
