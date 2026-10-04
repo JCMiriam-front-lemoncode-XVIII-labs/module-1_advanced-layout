@@ -4,6 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "format": "prettier --write \"src/**/*.{js,scss,html,json}\" \"scripts/*.mjs\" vite.config.js package.json .prettierrc.json",
+    "format:check": "prettier --check \"src/**/*.{js,scss,html,json}\" \"scripts/*.mjs\" vite.config.js package.json .prettierrc.json",
+    "catalog:sync": "node scripts/sync-tmdb.mjs",
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
@@ -11,6 +14,7 @@
   "devDependencies": {
     "@vitejs/plugin-react": "^4.4.1",
     "nunjucks": "^3.2.4",
+    "prettier": "^3.9.9",
     "sass": "^1.77.4",
     "vite": "^4.5.14",
     "vite-plugin-html": "^3.2.2",
