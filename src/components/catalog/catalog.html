@@ -1,0 +1,73 @@
+<section class="popular" aria-labelledby="popular-title">
+  <p class="eyebrow">La órbita principal</p>
+  <h1 id="popular-title">Nuestro top <span class="popular__count"></span></h1>
+  <ol class="popular__list">
+    {% for movie in movieCatalog.popular %}
+    <li class="popular__item">
+      <span class="popular__number" aria-hidden="true">{{ loop.index }}</span>
+      <button
+        class="movie-button poster"
+        data-movie="{{ movie.slug }}"
+        aria-label="Ver detalles de {{ movie.title }}"
+      >
+        {% if movie.poster %}
+        <img
+          class="poster-image"
+          src="{{ movie.poster }}"
+          alt="{{ movie.title }}"
+          width="500"
+          height="750"
+        />
+        {% else %}
+        <span class="artwork-placeholder poster-image"
+          ><span>{{ movie.title }}</span></span
+        >
+        {% endif %}
+      </button>
+    </li>
+    {% endfor %}
+  </ol>
+</section>
+{% for category in movieCatalog.categories %}
+<section class="category" aria-labelledby="category-{{ loop.index }}">
+  <h2 id="category-{{ loop.index }}">{{ category.name }}</h2>
+  <ul class="category__list">
+    {% for movie in category.movies %}
+    <li class="catalog-card" data-title="{{ movie.title }} {{ movie.originalTitle }}">
+      <button
+        class="movie-button"
+        data-movie="{{ movie.slug }}"
+        aria-label="Ver detalles de {{ movie.title }}"
+      >
+        {% if movie.backdrop %}
+        <img
+          class="thumbnail"
+          src="{{ movie.backdrop }}"
+          alt=""
+          loading="lazy"
+          width="780"
+          height="439"
+        />
+        <span class="movie-caption"
+          ><span>{{ movie.title }}</span
+          ><span class="movie-year">{{ movie.year }}</span></span
+        >
+        {% else %}
+        <span class="thumbnail artwork-placeholder"
+          ><span>{{ movie.title }} · {{ movie.year }}</span></span
+        >
+        {% endif %}
+      </button>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+<dialog class="movie-dialog" aria-labelledby="movie-title">
+  <button class="movie-dialog__close" aria-label="Cerrar detalles" autofocus>
+    Cerrar ✕
+  </button>
+  <h2 id="movie-title"></h2>
+  <p class="movie-dialog__meta"></p>
+  <p class="movie-dialog__overview"></p>
+</dialog>

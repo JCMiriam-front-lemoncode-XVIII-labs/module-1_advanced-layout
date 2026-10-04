@@ -1,21 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Layout Playground</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#141414" />
+    <title>Lemonspace</title>
+    <link rel="icon" type="image/svg+xml" href="/images/lemonspace-logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
-
-  <body class="theme-light">
-    {% include "./src/components/menu/menu.html" %}
-
-    <main class="container">
-      <section class="section" id="colors">{% include "./src/components/color-palette/color-palette.html" %}</section>
-      <section class="section" id="themes">{% include "./src/components/theme-toggle/theme-color.html" %}</section>
-      <section class="section" id="cards">{% include "./src/components/cards/cards.html" %}</section>
+  <body>
+    <a class="skip-link" href="#catalogo">Saltar al catálogo</a>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Lemonspace, inicio">
+        <img
+          class="brand__logo"
+          src="/images/lemonspace-logo.svg"
+          alt=""
+          width="377"
+          height="298"
+        />
+        <span class="brand__name">Lemonspace</span>
+      </a>
+      <nav aria-label="Navegación principal">
+        <a class="nav-link" href="#inicio">Inicio</a>
+        <a class="nav-link" href="#buscar">Buscar</a>
+      </nav>
+    </header>
+    <main class="catalog" id="inicio">
+      <div id="catalogo" tabindex="-1">
+        {% include "./src/components/catalog/catalog.html" %}
+      </div>
+      <section class="search-panel" id="buscar" aria-labelledby="search-title">
+        <h2 id="search-title">Buscar en el catálogo</h2>
+        <label for="catalog-search">Título de la película o serie</label>
+        <input id="catalog-search" type="search" placeholder="Escribe un título…" />
+        <p class="search-status" role="status" aria-live="polite"></p>
+      </section>
     </main>
     <script type="module" src="./main.js"></script>
   </body>
