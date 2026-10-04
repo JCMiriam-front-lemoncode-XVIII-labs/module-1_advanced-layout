@@ -1,44 +1,43 @@
-{% set colors = ['DE95F5', '7A4EF5', '9D2CD0', 'B620B8', '3D17AD'] %}
-
-{% for color in colors %}
-    <section class="color-palette">
-        <div class="color-palette__row">
-            <div class="color-palette__box color__{{ color }}-darken-4">
-                <span class="color-palette__box--variant">Darken 32%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-darken-3">
-                <span class="color-palette__box--variant">Darken 24%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-darken-2">
-                <span class="color-palette__box--variant">Darken 16%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-darken-1">
-                <span class="color-palette__box--variant">Darken 8%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-base-color">
-                <span class="color-palette__box--variant">Base color</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-lighten-1">
-                <span class="color-palette__box--variant">Lighten 8%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-lighten-2">
-                <span class="color-palette__box--variant">Lighten 16%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-lighten-3">
-                <span class="color-palette__box--variant">Lighten 24%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-            <div class="color-palette__box color__{{ color }}-lighten-4">
-                <span class="color-palette__box--variant">Lighten 32%</span>
-                <span class="color-palette__box--color">#{{ color }}</span>
-            </div>
-        </div>
-    </section>
+{% set colors = ['DE95F5', '7A4EF5', '9D2CD0', 'B620B8', '3D17AD'] %} {% for color in
+colors %}
+<section class="color-palette">
+  <div class="color-palette__row">
+    <div class="color-palette__box color__{{ color }}-darken-4">
+      <span class="color-palette__box--variant">Darken 32%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-darken-3">
+      <span class="color-palette__box--variant">Darken 24%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-darken-2">
+      <span class="color-palette__box--variant">Darken 16%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-darken-1">
+      <span class="color-palette__box--variant">Darken 8%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-base-color">
+      <span class="color-palette__box--variant">Base color</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-lighten-1">
+      <span class="color-palette__box--variant">Lighten 8%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-lighten-2">
+      <span class="color-palette__box--variant">Lighten 16%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-lighten-3">
+      <span class="color-palette__box--variant">Lighten 24%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+    <div class="color-palette__box color__{{ color }}-lighten-4">
+      <span class="color-palette__box--variant">Lighten 32%</span>
+      <span class="color-palette__box--color">#{{ color }}</span>
+    </div>
+  </div>
+</section>
 {% endfor %}

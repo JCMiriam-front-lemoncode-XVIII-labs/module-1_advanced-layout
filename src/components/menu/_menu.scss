@@ -1,4 +1,4 @@
-@use '../../commons/styles/breakpoints' as *; 
+@use '../../commons/styles/breakpoints' as *;
 @use '../../commons/styles/mixins' as *;
 @use '../theme-toggle/theme-toggle-button.scss' as *;
 
@@ -73,12 +73,8 @@
           display: none;
         }
 
-        @include gradient-transition(
-          transparent,
-          var(--accent-gradient-20),
-          0.4s
-        );
-        
+        @include gradient-transition(transparent, var(--accent-gradient-20), 0.4s);
+
         &:hover {
           box-shadow: var(--box-shadow);
         }
@@ -115,7 +111,6 @@
           @include small-desktop {
             flex: 1;
             padding: 8px 20px;
-            
           }
 
           @include gradient-transition(

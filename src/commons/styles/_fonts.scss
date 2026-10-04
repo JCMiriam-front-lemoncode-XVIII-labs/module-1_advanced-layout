@@ -2,17 +2,18 @@
 
 @font-face {
   font-family: 'IcoMoon';
-  src:  url('/fonts/icomoon.eot');
-  src:  url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-        url('/fonts/icomoon.woff') format('woff'),
-        url('/fonts/icomoon.ttf') format('truetype'),
-        url('/fonts/icomoon.svg#IcoMoon') format('svg');
+  src: url('/fonts/icomoon.eot');
+  src:
+    url('/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('/fonts/icomoon.woff') format('woff'),
+    url('/fonts/icomoon.ttf') format('truetype'),
+    url('/fonts/icomoon.svg#IcoMoon') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-[class^="icon-"], [class*=" icon-"] {
-  /* use !important to prevent issues with browser extensions that change fonts */
+[class^='icon-'],
+[class*=' icon-'] {
   font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
@@ -21,28 +22,27 @@
   text-transform: none;
   line-height: 1;
 
-  /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-lemonspace {
   &:before {
-    content: $icon-lemonspace; 
+    content: $icon-lemonspace;
   }
 }
 .icon-moon {
   &:before {
-    content: $icon-moon; 
+    content: $icon-moon;
   }
 }
 .icon-rocket {
   &:before {
-    content: $icon-rocket; 
+    content: $icon-rocket;
   }
 }
 .icon-sun {
   &:before {
-    content: $icon-sun; 
+    content: $icon-sun;
   }
 }

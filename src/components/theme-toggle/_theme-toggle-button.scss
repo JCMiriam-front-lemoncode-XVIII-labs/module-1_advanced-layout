@@ -3,7 +3,6 @@
 @use '../../commons/styles/mixins' as *;
 
 :root {
-  // Basic color theme
   --primary-color: var(--dark-primary-color);
   --secondary-color: var(--dark-secondary-color);
   --background-color: var(--dark-background-color);
@@ -12,7 +11,7 @@
 
   --primary-font-color: var(--dark-primary-font-color);
   --secondary-font-color: var(--dark-secondary-font-color);
-  
+
   --accent-color: var(--dark-accent-color);
 
   --accent-gradient: var(--dark-accent-gradient);
@@ -29,7 +28,7 @@
 
   --base-border-radius: 20px;
 
-  --primary-font: "Source Code Pro", monospace;
+  --primary-font: 'Source Code Pro', monospace;
 }
 
 body:has(#theme-toggle:checked) {
@@ -41,7 +40,7 @@ body:has(#theme-toggle:checked) {
 
   --primary-font-color: var(--light-primary-font-color);
   --secondary-font-color: var(--light-secondary-font-color);
-  
+
   --accent-color: var(--light-accent-color);
 
   --accent-gradient: var(--light-accent-gradient);
@@ -58,7 +57,7 @@ body:has(#theme-toggle:checked) {
 
   --base-border-radius: 0;
 
-  --primary-font: "IBM Plex Mono", monospace;
+  --primary-font: 'IBM Plex Mono', monospace;
 }
 
 .theme-toggle__button {
@@ -102,7 +101,7 @@ body:has(#theme-toggle:checked) {
 }
 
 #theme-toggle:checked {
-  & + .theme-toggle__button--label{
+  & + .theme-toggle__button--label {
     .theme-toggle__button--icon-container {
       transform: translate(0, 0);
     }

@@ -1,51 +1,123 @@
 :root {
-    // Light Theme Colors
-    --light-primary-color: #d3b3fb;
-    --light-secondary-color: #fff2ff;
-    --light-background-color: #f2f0ff;
+  --light-primary-color: #d3b3fb;
+  --light-secondary-color: #fff2ff;
+  --light-background-color: #f2f0ff;
 
-    --light-background-color-90: rgba(242, 240, 255, 0.9);
+  --light-background-color-90: rgba(242, 240, 255, 0.9);
 
-    --light-primary-font-color: #0c0a22;
-    --light-secondary-font-color: #453fa0;
-    
-    --light-accent-color: #b620b8;
+  --light-primary-font-color: #0c0a22;
+  --light-secondary-font-color: #453fa0;
 
-    --light-accent-gradient: linear-gradient(140deg,rgba(172, 135, 243, 1) 18%, rgba(200, 133, 243, 1) 100%);
-    --light-accent-gradient-70: linear-gradient(140deg,rgba(172, 135, 243, 0.7) 18%, rgba(200, 133, 243, 0.7) 100%);
-    --light-accent-gradient-50: linear-gradient(140deg,rgba(172, 135, 243, 0.5) 18%, rgba(200, 133, 243, 0.5) 100%);
-    --light-accent-gradient-20: linear-gradient(140deg,rgba(172, 135, 243, 0.3) 18%, rgba(200, 133, 243, 0.3) 100%);
-    
-    --light-background-gradient: linear-gradient(140deg, rgba(242, 240, 255, 1) 18%, rgba(242, 235, 253, 1) 70%, rgba(227, 217, 254, 1) 100%);
-    --light-background-gradient-70: linear-gradient(140deg, rgba(242, 240, 255, 0.7) 18%, rgba(242, 235, 253, 0.7) 70%, rgba(227, 217, 254, 0.7) 100%);
-    --light-background-gradient-50: linear-gradient(140deg, rgba(242, 240, 255, 0.5) 18%, rgba(242, 235, 253, 0.5) 70%, rgba(227, 217, 254, 0.5) 100%);
-    --light-background-gradient-20: linear-gradient(140deg, rgba(242, 240, 255, 0.2) 18%, rgba(242, 235, 253, 0.2) 70%, rgba(227, 217, 254, 0.2) 100%);
-   
-    --light-box-shadow: 0 4px 12px rgba(172, 135, 243, 0.3), 0 2px 6px rgba(0, 0, 0, 0.05);
-    --light-hover-box-shadow: 0 6px 20px rgba(157, 44, 208, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4);
+  --light-accent-color: #b620b8;
 
-    // Dark Theme Colors
-    --dark-primary-color: #3d17ad;
-    --dark-secondary-color: #0d0b22;
-    --dark-background-color: #13101f;
+  --light-accent-gradient: linear-gradient(
+    140deg,
+    rgba(172, 135, 243, 1) 18%,
+    rgba(200, 133, 243, 1) 100%
+  );
+  --light-accent-gradient-70: linear-gradient(
+    140deg,
+    rgba(172, 135, 243, 0.7) 18%,
+    rgba(200, 133, 243, 0.7) 100%
+  );
+  --light-accent-gradient-50: linear-gradient(
+    140deg,
+    rgba(172, 135, 243, 0.5) 18%,
+    rgba(200, 133, 243, 0.5) 100%
+  );
+  --light-accent-gradient-20: linear-gradient(
+    140deg,
+    rgba(172, 135, 243, 0.3) 18%,
+    rgba(200, 133, 243, 0.3) 100%
+  );
 
-    --dark-background-color-90: rgba(19, 16, 31, 0.9);
+  --light-background-gradient: linear-gradient(
+    140deg,
+    rgba(242, 240, 255, 1) 18%,
+    rgba(242, 235, 253, 1) 70%,
+    rgba(227, 217, 254, 1) 100%
+  );
+  --light-background-gradient-70: linear-gradient(
+    140deg,
+    rgba(242, 240, 255, 0.7) 18%,
+    rgba(242, 235, 253, 0.7) 70%,
+    rgba(227, 217, 254, 0.7) 100%
+  );
+  --light-background-gradient-50: linear-gradient(
+    140deg,
+    rgba(242, 240, 255, 0.5) 18%,
+    rgba(242, 235, 253, 0.5) 70%,
+    rgba(227, 217, 254, 0.5) 100%
+  );
+  --light-background-gradient-20: linear-gradient(
+    140deg,
+    rgba(242, 240, 255, 0.2) 18%,
+    rgba(242, 235, 253, 0.2) 70%,
+    rgba(227, 217, 254, 0.2) 100%
+  );
 
-    --dark-primary-font-color: #fdfeff;    
-    --dark-secondary-font-color: #7a4ef5;    
-    
-    --dark-accent-color: #de95f5;
+  --light-box-shadow: 0 4px 12px rgba(172, 135, 243, 0.3), 0 2px 6px rgba(0, 0, 0, 0.05);
+  --light-hover-box-shadow:
+    0 6px 20px rgba(157, 44, 208, 0.5), 0 4px 12px rgba(0, 0, 0, 0.4);
 
-    --dark-accent-gradient: linear-gradient(140deg,rgba(157, 44, 208, 1) 18%, rgba(203, 45, 218, 1) 100%);
-    --dark-accent-gradient-70: linear-gradient(140deg,rgba(157, 44, 208, 0.7) 18%, rgba(203, 45, 218, 0.7) 100%);
-    --dark-accent-gradient-50: linear-gradient(140deg,rgba(157, 44, 208, 0.5) 18%, rgba(203, 45, 218, 0.5) 100%);
-    --dark-accent-gradient-20: linear-gradient(140deg,rgba(157, 44, 208, 0.3) 18%, rgba(203, 45, 218, 0.3) 100%);
+  --dark-primary-color: #3d17ad;
+  --dark-secondary-color: #0d0b22;
+  --dark-background-color: #13101f;
 
-    --dark-background-gradient: linear-gradient(180deg,rgba(19, 16, 31, 1) 18%, rgba(32, 20, 64, 1) 70%, rgba(44, 20, 79, 1) 100%);
-    --dark-background-gradient-70: linear-gradient(180deg,rgba(19, 16, 31, 0.7) 18%, rgba(32, 20, 64, 0.7) 70%, rgba(44, 20, 79, 0.7) 100%);
-    --dark-background-gradient-50: linear-gradient(180deg,rgba(19, 16, 31, 0.5) 18%, rgba(32, 20, 64, 0.5) 70%, rgba(44, 20, 79, 0.5) 100%);
-    --dark-background-gradient-20: linear-gradient(180deg,rgba(19, 16, 31, 0.2) 18%, rgba(32, 20, 64, 0.2) 70%, rgba(44, 20, 79, 0.2) 100%);
+  --dark-background-color-90: rgba(19, 16, 31, 0.9);
 
-    --dark-box-shadow: 0 4px 12px rgba(157, 44, 208, 0.35), 0 2px 6px rgba(0, 0, 0, 0.3);
-    --dark-hover-box-shadow: 0 6px 20px rgba(172, 135, 243, 0.45), 0 4px 12px rgba(0, 0, 0, 0.1);
+  --dark-primary-font-color: #fdfeff;
+  --dark-secondary-font-color: #7a4ef5;
+
+  --dark-accent-color: #de95f5;
+
+  --dark-accent-gradient: linear-gradient(
+    140deg,
+    rgba(157, 44, 208, 1) 18%,
+    rgba(203, 45, 218, 1) 100%
+  );
+  --dark-accent-gradient-70: linear-gradient(
+    140deg,
+    rgba(157, 44, 208, 0.7) 18%,
+    rgba(203, 45, 218, 0.7) 100%
+  );
+  --dark-accent-gradient-50: linear-gradient(
+    140deg,
+    rgba(157, 44, 208, 0.5) 18%,
+    rgba(203, 45, 218, 0.5) 100%
+  );
+  --dark-accent-gradient-20: linear-gradient(
+    140deg,
+    rgba(157, 44, 208, 0.3) 18%,
+    rgba(203, 45, 218, 0.3) 100%
+  );
+
+  --dark-background-gradient: linear-gradient(
+    180deg,
+    rgba(19, 16, 31, 1) 18%,
+    rgba(32, 20, 64, 1) 70%,
+    rgba(44, 20, 79, 1) 100%
+  );
+  --dark-background-gradient-70: linear-gradient(
+    180deg,
+    rgba(19, 16, 31, 0.7) 18%,
+    rgba(32, 20, 64, 0.7) 70%,
+    rgba(44, 20, 79, 0.7) 100%
+  );
+  --dark-background-gradient-50: linear-gradient(
+    180deg,
+    rgba(19, 16, 31, 0.5) 18%,
+    rgba(32, 20, 64, 0.5) 70%,
+    rgba(44, 20, 79, 0.5) 100%
+  );
+  --dark-background-gradient-20: linear-gradient(
+    180deg,
+    rgba(19, 16, 31, 0.2) 18%,
+    rgba(32, 20, 64, 0.2) 70%,
+    rgba(44, 20, 79, 0.2) 100%
+  );
+
+  --dark-box-shadow: 0 4px 12px rgba(157, 44, 208, 0.35), 0 2px 6px rgba(0, 0, 0, 0.3);
+  --dark-hover-box-shadow:
+    0 6px 20px rgba(172, 135, 243, 0.45), 0 4px 12px rgba(0, 0, 0, 0.1);
 }

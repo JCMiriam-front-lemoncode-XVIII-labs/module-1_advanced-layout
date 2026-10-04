@@ -1,102 +1,102 @@
-@use '../../commons/styles/breakpoints' as *; 
+@use '../../commons/styles/breakpoints' as *;
 @use '../../commons/styles/mixins' as *;
 @use '../theme-toggle/theme-toggle-button.scss' as *;
 
 .theme-demo {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  @include tablet {
+    flex-direction: row;
+  }
+
+  .theme-demo__colors {
     display: flex;
     flex-direction: column;
     gap: 20px;
 
-    @include tablet {
-        flex-direction: row;
-    }
+    .theme-demo__main-colors {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
 
-    .theme-demo__colors {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-
-        .theme-demo__main-colors {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 10px;
-
-            .theme-demo__main-colors--box {
-                flex: 1;
-                padding: 20px;
-                border-radius: var(--base-border-radius);
-                box-shadow: var(--box-shadow);
-
-                &.is-primary {
-                    background: var(--primary-color);
-                }
-
-                &.is-secondary {
-                    background: var(--secondary-color);
-                }
-
-                &.is-background {
-                    background: var(--background-color);
-                }
-            }
-        }
-
-        .theme-demo__gradients {
-            flex: 1;
-            display: flex;
-            gap: 20px;
-
-            .theme-demo__gradients--box {
-                flex: 1;
-                padding: 20px;
-                border-radius: var(--base-border-radius);
-                box-shadow: var(--box-shadow);
-
-                &.is-accent-gradient {
-                    background: var(--accent-gradient);
-                }
-
-                &.is-background-gradient {
-                    background: var(--background-gradient);
-                }
-            }
-        }
-    }
-
-    .theme-demo__typography {
+      .theme-demo__main-colors--box {
         flex: 1;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
+        padding: 20px;
+        border-radius: var(--base-border-radius);
+        box-shadow: var(--box-shadow);
 
-        .theme-demo__typography--title {
-            font-size: 32px;
-            font-weight: bold;
+        &.is-primary {
+          background: var(--primary-color);
         }
 
-        .theme-demo__typography--text {
-            @include ellipsis(10);
-
-            @include tablet {
-                @include ellipsis(12);
-            }
+        &.is-secondary {
+          background: var(--secondary-color);
         }
 
-        .theme-demo__typography--link {
-            font-size: 18px;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--secondary-font-color);
-            font-weight: bold;
-            transition: all 0.3s ease;
-            cursor: pointer;
-
-            &:hover,
-            &:focus {
-                opacity: 0.8;
-            }
+        &.is-background {
+          background: var(--background-color);
         }
+      }
     }
+
+    .theme-demo__gradients {
+      flex: 1;
+      display: flex;
+      gap: 20px;
+
+      .theme-demo__gradients--box {
+        flex: 1;
+        padding: 20px;
+        border-radius: var(--base-border-radius);
+        box-shadow: var(--box-shadow);
+
+        &.is-accent-gradient {
+          background: var(--accent-gradient);
+        }
+
+        &.is-background-gradient {
+          background: var(--background-gradient);
+        }
+      }
+    }
+  }
+
+  .theme-demo__typography {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    .theme-demo__typography--title {
+      font-size: 32px;
+      font-weight: bold;
+    }
+
+    .theme-demo__typography--text {
+      @include ellipsis(10);
+
+      @include tablet {
+        @include ellipsis(12);
+      }
+    }
+
+    .theme-demo__typography--link {
+      font-size: 18px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--secondary-font-color);
+      font-weight: bold;
+      transition: all 0.3s ease;
+      cursor: pointer;
+
+      &:hover,
+      &:focus {
+        opacity: 0.8;
+      }
+    }
+  }
 }

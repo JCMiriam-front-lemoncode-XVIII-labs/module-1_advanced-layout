@@ -7,131 +7,129 @@ $fourth-color: #3d17ad;
 $fift-color: #7a4ef5;
 
 $color-map: (
-    "DE95F5": $first-color,
-    "B620B8": $second-color,
-    "9D2CD0": $third-color,
-    "3D17AD": $fourth-color,
-    "7A4EF5": $fift-color
+  'DE95F5': $first-color,
+  'B620B8': $second-color,
+  '9D2CD0': $third-color,
+  '3D17AD': $fourth-color,
+  '7A4EF5': $fift-color,
 );
 
 @function readable-text($color) {
-    @return if(lightness($color) > 50, #000, #fff);
+  @return if(lightness($color) > 50, #000, #fff);
 }
 
 @each $name, $base-color in $color-map {
-    .#{"color__" + $name}-base-color {
-        background-color: $base-color;
-        color: readable-text($base-color);
+  .#{'color__' + $name}-base-color {
+    background-color: $base-color;
+    color: readable-text($base-color);
+  }
+
+  @for $i from 1 through 4 {
+    .#{'color__' + $name}-darken-#{$i} {
+      $color: darken($base-color, $i * 8%);
+      background-color: $color;
+      color: readable-text($color);
     }
 
-    @for $i from 1 through 4 {
-        .#{"color__" + $name}-darken-#{$i} {
-            $color: darken($base-color, $i * 8%);
-            background-color: $color;
-            color: readable-text($color);
-        }
-
-        .#{"color__" + $name}-lighten-#{$i} {
-            $color: lighten($base-color, $i * 8%);
-            background-color: $color;
-            color: readable-text($color);
-        }
+    .#{'color__' + $name}-lighten-#{$i} {
+      $color: lighten($base-color, $i * 8%);
+      background-color: $color;
+      color: readable-text($color);
     }
+  }
 }
 
 #colors:target {
-    display: flex;
-    flex-direction: row;
-    gap: 8px;
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
 
-    @include small-desktop {
-        flex-direction: column;
+  @include small-desktop {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .color-palette {
+    flex: 1;
+
+    .color-palette__row {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      @include small-desktop {
+        flex-direction: row;
         gap: 12px;
-    }
+      }
 
-    .color-palette {
+      .color-palette__box {
+        border-radius: var(--base-border-radius);
         flex: 1;
+        aspect-ratio: 1 / 1;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        box-shadow: var(--box-shadow);
+        padding: 10px;
+        transition: transform 0.2s ease;
 
-        .color-palette__row {
-            flex: 1;
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-
-            @include small-desktop {
-                flex-direction: row;
-                gap: 12px;
-            }
-
-            .color-palette__box {
-                border-radius: var(--base-border-radius);
-                flex: 1;
-                aspect-ratio: 1 / 1;
-                font-weight: bold;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: space-between;
-                box-shadow: var(--box-shadow);
-                padding: 10px;
-                transition: transform 0.2s ease;
-
-                @include tablet {
-                    padding: 12px;
-                }
-
-                @include small-desktop {
-                    padding: 10px;
-                }
-
-                .color-palette__box--color {
-                    text-align: center;
-                    font-size: 10px;
-                    opacity: 0;
-                    transition: all 0.3s ease;
-
-                    @include phone {
-                        font-size: 16px;
-                    }
-
-                    @include tablet {
-                        font-size: 20px;
-                    }
-
-                    @include small-desktop {
-                        font-size: 18px;
-                    }
-                }
-
-                &:hover {
-                    transform: scale(1.25);
-                    box-shadow: var(--hover-box-shadow);
-
-                    .color-palette__box--color {
-                        opacity: 1;
-                    }
-                }
-            }
-
-            .color-palette__box--variant,
-            .color-palette__box--color {
-                text-align: center;
-                font-size: 10px;
-
-                @include phone {
-                    font-size: 14px;
-                }
-
-                @include tablet {
-                    font-size: 18px;
-                }
-
-                @include small-desktop {
-                    font-size: 16px;
-                }
-            }
-
-            
+        @include tablet {
+          padding: 12px;
         }
+
+        @include small-desktop {
+          padding: 10px;
+        }
+
+        .color-palette__box--color {
+          text-align: center;
+          font-size: 10px;
+          opacity: 0;
+          transition: all 0.3s ease;
+
+          @include phone {
+            font-size: 16px;
+          }
+
+          @include tablet {
+            font-size: 20px;
+          }
+
+          @include small-desktop {
+            font-size: 18px;
+          }
+        }
+
+        &:hover {
+          transform: scale(1.25);
+          box-shadow: var(--hover-box-shadow);
+
+          .color-palette__box--color {
+            opacity: 1;
+          }
+        }
+      }
+
+      .color-palette__box--variant,
+      .color-palette__box--color {
+        text-align: center;
+        font-size: 10px;
+
+        @include phone {
+          font-size: 14px;
+        }
+
+        @include tablet {
+          font-size: 18px;
+        }
+
+        @include small-desktop {
+          font-size: 16px;
+        }
+      }
     }
+  }
 }
